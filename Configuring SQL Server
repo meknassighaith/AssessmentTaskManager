@@ -1,0 +1,8 @@
+## Configuring SQL Server
+1- Replace Server=DESKTOP-BDE461V\\SQLEXPRESS with your SQL Server instance name in `appsettings.json`.
+2- Add a Migration
+   -->dotnet ef migrations add InitialCreate
+3- Apply the Migration
+   -->dotnet ef database update
+4- Verify the Database
+   Check your SQL Server instance to ensure the database (TaskManagerDB) and its tables have been created.
